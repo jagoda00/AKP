@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(img/pozadina\ slika.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+nav {
+  display: flex;
+  padding: 50px 7%;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 5000;
+}
+
+#logo {
+  width: 60px;
+  color: black;
+  z-index: 8000;
+  mix-blend-mode: difference;
+  position: fixed;
+  top: 40px;
+  left: 60px;
+  cursor: pointer;
+}
+.nav-menu {
+  flex: 1;
+  text-align: right;
+  padding-left: 1150px;
+  z-index: 5000;
+}
+.nav-menu ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 12px 22px;
+  position: relative;
+  z-index: 5000;
+}
+.nav-menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  z-index: 5000;
+  text-shadow: 5px 4px 12px black;
+}
+
+.nav-menu ul li a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #d74b27;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-menu ul li a:hover:after {
+  width: 100%;
+}
+
+.photography {
+  text-align: center;
+  z-index: 8000;
+  padding-top: 600px;
+  padding-right: 1100px;
+  transform: translateY(130px);
+  opacity: 1;
+  transition: 2s all ease;
+  translate: 0 -100px;
+}
+.photography.active {
+  transform: translateY(0);
+  opacity: 0;
+}
+
+.photography h2 {
+  color: #d74b27;
+  font-size: 83px;
+  font-weight: 400;
+}
+.photography h3 {
+  color: white;
+  font-size: 145px;
+  translate: 0 -100px;
+  font-family: "Waterfall", serif;
+  font-weight: 300;
+}
+
+/* GALLERY */
+
+.gallery-one {
+  height: 1080px;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  z-index: -5000;
+}
+.gallery-one h1 {
+  font-size: 139px;
+  font-family: "Bodoni Moda", serif;
+  font-weight: 400;
+  color: white;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+  margin-left: 0px;
+  translate: 210px 250px;
+}
+.gallery-one h1.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.gallery-one img {
+  width: 960px;
+  top: 0;
+}
+.gallery-one p {
+  font-size: 27px;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+  color: white;
+  translate: 210px 270px;
+  border-top: 3px solid white;
+  padding-top: 17px;
+}
+.gallery-one p.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.gallery-two {
+  height: 1080px;
+  background-color: black;
+  width: 100%;
+  display: flex;
+}
+.gallery-two p {
+  font-size: 27px;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+  margin-left: 0;
+  color: white;
+  translate: 700px 270px;
+}
+.gallery-two p.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.gallery-two img {
+  padding: 30px;
+}
+
+.gallery-three {
+  height: 1080px;
+  background-color: black;
+  width: 100%;
+  display: flex;
+}
+.gallery-three p {
+  font-size: 27px;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+  color: white;
+  translate: 200px 380px;
+}
+.gallery-three p.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.gallery-three img {
+  width: 960px;
+  padding-left: 25%;
+}
+
+/* HYBRID SCROLL*/
+
+.sticky-parent {
+  height: 400vh;
+}
+
+.sticky {
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.scroll-section {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  display: flex;
+  will-change: transform;
+  width: 400vw;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5vw;
+  background-color: white;
+}
+.scroll-section img {
+  width: 500px;
+  object-fit: cover;
+  height: 80%;
+  object-position: center;
+}
+
+/* GALLERY END */
+
+.gallery-end {
+  height: 110vh;
+  background-color: black;
+  display: flex;
+}
+.gallery-end img {
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.gallery-end img.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+#end-one {
+  height: 762px;
+  padding: 50px 50px;
+}
+#end-two {
+  height: 594px;
+  padding: 50px 50px;
+  padding-top: 270px;
+}
+
+.gallery-end p {
+  color: white;
+  font-size: 27px;
+  margin-left: 0;
+  margin-top: 0;
+  padding-top: 17px;
+  padding: 50px 0px;
+  border-top: 3px solid white;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.gallery-end p.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.gallery-end h1 {
+  font-size: 80px;
+  font-family: "Bodoni Moda", serif;
+  font-weight: 500;
+  color: white;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+  margin-left: 0;
+  margin-top: 0;
+  padding-top: 220px;
+}
+.end-text {
+  padding: 30px 30px;
+  padding-left: 50px;
+}
+.gallery-end h1.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* ABOUT ME */
+
+.about-me {
+  height: 100vh;
+  background-color: white;
+  width: 100%;
+  display: flex;
+}
+.about-me img {
+  margin-left: 0;
+  padding-left: 27%;
+}
+.about-me h1 {
+  font-size: 100px;
+  font-family: "Bodoni Moda", serif;
+  font-weight: 500;
+  color: black;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+  translate: 150px 170px;
+}
+
+.about-me h1.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.about-me p {
+  font-size: 27px;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+  color: black;
+  translate: 150px 190px;
+  padding-top: 17px;
+  border-top: 3px solid black;
+}
+.about-me p.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+/* CONTACT */
+.contact {
+  height: 100vh;
+  background-color: black;
+  text-align: center;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(img/slika\ futer.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  z-index: -5000;
+}
+.contact-one p {
+  color: white;
+  padding-top: 241px;
+  font-size: 18px;
+}
+.contact-one h1 {
+  padding-top: 40px;
+  color: white;
+  font-size: 80px;
+  font-family: "Bodoni Moda", serif;
+  font-weight: 400;
+}
+.contact-two {
+  padding-top: 20px;
+}
+.contact-two p {
+  color: white;
+  font-size: 22px;
+}
+.contact-two h3 {
+  color: white;
+  font-size: 37px;
+  font-weight: 200;
+  padding-top: 40px;
+}
+.contact-two h4 {
+  color: white;
+  font-size: 18px;
+  font-weight: 200;
+  padding-top: 20px;
+}
+.contact-two h5 {
+  color: white;
+  font-size: 18px;
+  font-weight: 200;
+  padding-top: 40px;
+}
+.contact-two a {
+  color: white;
+  font-size: 28px;
+  font-weight: 200;
+  padding-top: 10px;
+  transition: ease-in-out 0.1s;
+  z-index: 5000;
+  cursor: pointer;
+}
+.contact-two a:hover {
+  color: #d74b27;
+}
+#rights {
+  padding-top: 50px;
+  font-size: 18px;
+  color: #7d7d7d;
+}

@@ -1,0 +1,392 @@
+/*------------------------------
+        Media Query
+------------------------------*/
+
+@media all and (max-width: 1500px) {
+}
+
+@media all and (max-width: 1200px) {
+}
+
+@media all and (max-width: 991px) {
+}
+
+@media all and (max-width: 800px) {
+  #logo {
+    position: fixed;
+    z-index: 9000;
+    width: 55px;
+  }
+  .header {
+    width: 100%;
+  }
+  .gallery {
+    z-index: 6000;
+  }
+  .nav-menu {
+    padding-left: 150px;
+  }
+  .nav-menu ul li a {
+    font-size: 14px;
+  }
+  .nav-menu ul li a::after {
+    content: "";
+    display: none;
+  }
+  .photography {
+    display: none;
+    padding-top: 0;
+    padding-right: 0;
+  }
+  .photography h3 {
+    translate: 0 0;
+  }
+  .gallery-one {
+    display: block;
+    height: 1000px;
+  }
+  .gallery-one img {
+    width: 100%;
+    top: 0;
+  }
+  .gallery-one h1 {
+    font-size: 100px;
+    margin-left: 0;
+    padding-left: 0;
+    translate: 0 -150px;
+  }
+  .gallery-one p {
+    font-size: 20px;
+    margin-left: 0;
+    translate: 0 -150px;
+    border-top: 2px solid white;
+    padding-top: 17px;
+    padding: 20px 0;
+  }
+  .gallery-one-text {
+    padding: 50px 50px;
+  }
+  .gallery-two {
+    height: 1200px;
+    display: block;
+    text-align: center;
+  }
+  .gallery-two p {
+    font-size: 20px;
+    margin-left: 0;
+    translate: 0 400px;
+  }
+  .gallery-two img {
+    padding: 0;
+    width: 100%;
+    margin-top: 100px;
+  }
+  .gallery-three {
+    height: 1200px;
+    width: 100%;
+    display: block;
+  }
+  .gallery-three p {
+    font-size: 20px;
+    translate: 0 100px;
+  }
+  .gallery-three img {
+    width: 100%;
+    margin-top: 90px;
+    padding-left: 0;
+  }
+  .gallery-end {
+    height: 110vh;
+    display: block;
+  }
+  #end-one {
+    height: 45%;
+    padding: 0 0;
+    padding-left: 80px;
+    padding-top: 450px;
+  }
+  #end-two {
+    padding: 0 0;
+    height: 40%;
+    padding-left: 50px;
+    padding-top: 0;
+    translate: 0 -100px;
+  }
+  .end-text {
+    padding: 50px 50px;
+    padding-left: 80px;
+    translate: 0 -1000px;
+  }
+  .gallery-end p {
+    font-size: 15px;
+    margin-left: 0;
+    margin-top: 0;
+    padding-top: 17px;
+    translate: 0 0px;
+    padding: 17px 0px;
+    border-top: 2px solid white;
+  }
+  .gallery-end h1 {
+    font-size: 48px;
+    margin-left: 0;
+    margin-top: 0;
+    translate: 0 0;
+  }
+  .about-me {
+    height: 900px;
+    width: 100%;
+    display: block;
+  }
+  .about-me img {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 70px;
+    padding-left: 0;
+  }
+  .about-text {
+    padding: 50px 50px;
+    padding-top: 100px;
+  }
+  .about-me h1 {
+    font-size: 60px;
+    font-weight: 500;
+    translate: 0 0;
+  }
+  .about-me p {
+    font-size: 17px;
+    translate: 0 0;
+    padding-top: 17px;
+    border-top: 2px solid black;
+  }
+  .contact {
+    height: 100vh;
+    width: 100%;
+    padding-top: 0;
+    margin-top: 700px;
+  }
+  .contact-one p {
+    padding: 20px 50px;
+    padding-top: 220px;
+    font-size: 17px;
+  }
+  .contact-one h1 {
+    padding-top: 0;
+    font-size: 70px;
+  }
+  .contact-two p {
+    font-size: 14px;
+    padding: 0 50px;
+  }
+  .contact-two h3 {
+    font-size: 30px;
+    padding-top: 30px;
+  }
+  .contact-two h4 {
+    font-size: 17px;
+    padding-top: 30px;
+  }
+  .contact-two h5 {
+    font-size: 17px;
+    padding-top: 20px;
+  }
+  .contact-two a {
+    font-size: 22px;
+  }
+  #rights {
+    padding-top: 150px;
+    font-size: 16px;
+  }
+  /* HYBRID SCROLL*/
+  .scroll-section img {
+    width: 400px;
+    object-fit: cover;
+    height: 38%;
+  }
+}
+
+@media all and (max-width: 480px) {
+  #logo {
+    position: fixed;
+    z-index: 9000;
+    width: 50px;
+  }
+  .header {
+    width: 100%;
+  }
+  .gallery {
+    z-index: 6000;
+  }
+  .nav-menu {
+    display: none;
+    padding-left: 0;
+  }
+
+  .photography {
+    display: none;
+    padding-top: 0;
+    padding-right: 0;
+  }
+  .photography h3 {
+    translate: 0 0;
+  }
+  .gallery-one {
+    display: block;
+    height: 900px;
+  }
+  .gallery-one img {
+    width: 100%;
+    top: 0;
+  }
+  .gallery-one h1 {
+    font-size: 90px;
+    margin-left: 0;
+    padding-left: 0;
+    translate: 0 -50px;
+  }
+  .gallery-one p {
+    font-size: 20px;
+    margin-left: 0;
+    translate: 0 -30px;
+    border-top: 2px solid white;
+    padding-top: 17px;
+    padding: 20px 0;
+  }
+  .gallery-one-text {
+    padding: 50px 50px;
+  }
+  .gallery-two {
+    height: 900px;
+    display: block;
+  }
+  .gallery-two p {
+    font-size: 20px;
+    margin-left: 0;
+    translate: 0 160px;
+  }
+  .gallery-two img {
+    padding: 0;
+    width: 100%;
+    margin-top: 200px;
+  }
+  .gallery-three {
+    height: 900px;
+    width: 100%;
+    display: block;
+  }
+  .gallery-three p {
+    font-size: 20px;
+    translate: 0 140px;
+  }
+  .gallery-three img {
+    width: 100%;
+    margin-top: 130px;
+    padding-left: 0;
+  }
+  .gallery-end {
+    height: 110vh;
+    display: block;
+  }
+  #end-one {
+    height: 40%;
+    padding: 0 0;
+    padding-left: 50px;
+    padding-top: 40px;
+  }
+  #end-two {
+    padding: 0 0;
+    height: 35%;
+    translate: 0 0;
+    padding-left: 190px;
+    padding-top: 160px;
+  }
+  .end-text {
+    padding: 50px 50px;
+    padding-left: 50px;
+    translate: 0 0;
+  }
+  .gallery-end p {
+    font-size: 15px;
+    margin-left: 0;
+    margin-top: 0;
+    padding-top: 17px;
+    translate: 0 -800px;
+    padding: 17px 0px;
+    border-top: 2px solid white;
+  }
+  .gallery-end h1 {
+    font-size: 48px;
+    margin-left: 0;
+    margin-top: 0;
+    translate: 0 -800px;
+  }
+  .about-me {
+    height: 700px;
+    width: 100%;
+    display: block;
+  }
+  .about-me img {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 70px;
+    padding-left: 0;
+  }
+  .about-text {
+    padding: 50px 50px;
+    padding-top: 100px;
+  }
+  .about-me h1 {
+    font-size: 60px;
+    font-weight: 500;
+    translate: 0 0;
+  }
+  .about-me p {
+    font-size: 17px;
+    translate: 0 0;
+    padding-top: 17px;
+    border-top: 2px solid black;
+  }
+  .contact {
+    height: 100vh;
+    width: 100%;
+    padding-top: 0;
+    margin-top: 550px;
+  }
+  .contact-one p {
+    padding: 20px 50px;
+    padding-top: 220px;
+    font-size: 17px;
+  }
+  .contact-one h1 {
+    padding-top: 0;
+    font-size: 70px;
+  }
+  .contact-two p {
+    font-size: 14px;
+    padding: 0 50px;
+  }
+  .contact-two h3 {
+    font-size: 30px;
+    padding-top: 30px;
+  }
+  .contact-two h4 {
+    font-size: 17px;
+    padding-top: 30px;
+  }
+  .contact-two h5 {
+    font-size: 17px;
+    padding-top: 20px;
+  }
+  .contact-two a {
+    font-size: 22px;
+  }
+  #rights {
+    padding-top: 150px;
+    font-size: 16px;
+  }
+  /* HYBRID SCROLL*/
+  .scroll-section img {
+    width: 400px;
+    object-fit: cover;
+    height: 38%;
+  }
+}

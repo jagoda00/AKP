@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AK PORFOLIO</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500&family=DM+Serif+Display&family=Roboto:wght@400;700&family=Waterfall&display=swap" rel="stylesheet">
+  <body>
+    <section class="header">
+      <a href="index.html" id="logo"><img src="img/logo bijeli.svg" ></a>
+      <nav>
+      <section class="nav-menu">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="#gallery">GALLERY</a></li>
+          <li><a href="#about-me">ABOUT ME</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </section>
+      
+    </nav>
+    <div class="photography">
+      <h2>PORTFOLIO</h2>
+      <h3>Photography</h3>
+    </div>
+    </section>
+
+    <!--  GALLERY  --> 
+
+    <section class="gallery" id="gallery">
+      <div class="gallery-one">
+      <img src="img/slika3.jpg">
+      <div class="gallery-one-text">
+      <h1>Gallery</h1>
+      <p>PHOTOGRAPHY IS A WAY OF FEELING,<br> OF TOUCHING, OF LOVING.<br> WHAT YOU HAVE COUGHT ON<br> FILM IS CAPTURED FOREVER...</p>
+    </div>
+    </div>
+    <div class="gallery-two">
+      <div class="gallery-one-text">
+        <p>IT REMEMBERS LITTLE THINGS,<br> LONG AFTER YOU HAVE<br> FORGOTTEN EVERYTHING.</p>
+      </div>
+      <img src="img/slika2.jpg">
+    </div>
+    <div class="gallery-three">
+      <div class="gallery-one-text">
+        <p>MAKING THE IMPORTANT BITS ETERNAL.<br> CAPTURING YOUR<br> HAPPIEST MOMENTS.</p>
+      </div>
+      <img src="img/slika4 (2).jpg">
+      
+    </div>
+    
+    
+    </section>
+
+    <!-- HYBRID SCROLL --> 
+
+    <div class="sticky-parent">
+      <div class="sticky">
+        <div class="scroll-section"></div>
+      </div>
+    </div>
+
+
+ <!--  GALLERY END  --> 
+ <section class="gallery-end">
+  <img src="img/Andjela_Karac_01.jpg" id="end-one">
+  <img src="img/Andjela_Karac_02.jpg" id="end-two">
+  <div class="end-text">
+  <h1>Butterfly girl</h1>
+  <p>DRAWING INSPIRATION FROM<br> DIFFERENT PEOPLE AND EMOTIONS.<br> THE PORTRAIT PROJECT<br> INSPIRED IRENE RUDNYK.</p>
+</div>
+ </section>
+
+<!--  ABOUT ME  --> 
+
+<section class="about-me" id="about-me">
+  <div class="about-text">
+  <h1>About me</h1>
+  <p>I AM A PORTRAIT ART FASHION PHOTOGRAPHER,<br> BASED IN GRAZ, AUSTRIA.<br><br> 
+    SINCE EARLY CHILDHOOD,<br> ART HAS BEEN A VERY<br> IMPORTANT FACTOR IN MY LIFE,<br> AND I FELL IN LOVE WITH<br> PHOTOGRAPHY A FEW YEARS AGO.<br><br>
+    
+    WHAT STARTED AS A HOBBY<br> HAS SWIFTLY EVOLVED<br> INTO MY LIFE'S VOCATION.</p>
+</div>
+<img src="img/223788820_2394781493988708_2440101374266088645_n.jpg">
+</section>
+
+ <!--  CONTACT  --> 
+ <section class="contact" id="contact">
+  <div class="contact-one">
+    <p>WORK WITH ME <br> HAVE AN UPCOMING PROJECT? I'D LOVE TO COLLABORATE WITH YOU!</p>
+    <h1>Contact</h1>
+  </div>
+  <div class="contact-two">
+    <p>BASED IN GRAZ, AUSTRIA <br> PLEASE EMAIL ME FOR WEDDING AND OTHER INQUIRIES.<br> PURSUING THE QUALITY OVER QUANTITY AND HEARTFULLY COMMITTING TO<br> EVERY ENGAGEMENT.</p>
+ <h3>GET IN TOUCH.</h3>
+ <h4>EMAIL ME <br> andjela.karac999@gmail.com</h4>
+ <h5>FOLLOW ME ON INSTAGRAM</h5>
+ <a href="https://www.instagram.com/andjelakarac/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="_blank" id="insta">@andjelakarac</a>
+ <p id="rights">All rights reserved 2023</p>
+  </div>
+ </section>
+
+
+    <script src="script.js"></script>
+    <script>
+      function reveal() {
+  var reveals = document.querySelectorAll(".gallery-one h1");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+
+window.addEventListener("scroll", reveal);
+    </script>
+        <script>
+          function reveal() {
+      var reveals = document.querySelectorAll(".gallery-one p");
+    
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+    
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
+    
+    
+    window.addEventListener("scroll", reveal);
+        </script>
+        <script>
+          function reveal() {
+      var reveals = document.querySelectorAll(".gallery-two p");
+    
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+    
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
+    
+    
+    window.addEventListener("scroll", reveal);
+        </script>
+ <script>
+  function reveal() {
+var reveals = document.querySelectorAll(".gallery-three p");
+
+for (var i = 0; i < reveals.length; i++) {
+var windowHeight = window.innerHeight;
+var elementTop = reveals[i].getBoundingClientRect().top;
+var elementVisible = 150;
+
+if (elementTop < windowHeight - elementVisible) {
+  reveals[i].classList.add("active");
+} else {
+  reveals[i].classList.remove("active");
+}
+}
+}
+
+
+window.addEventListener("scroll", reveal);
+</script>
+<script>
+  function reveal() {
+var reveals = document.querySelectorAll(".about-me h1");
+
+for (var i = 0; i < reveals.length; i++) {
+var windowHeight = window.innerHeight;
+var elementTop = reveals[i].getBoundingClientRect().top;
+var elementVisible = 150;
+
+if (elementTop < windowHeight - elementVisible) {
+  reveals[i].classList.add("active");
+} else {
+  reveals[i].classList.remove("active");
+}
+}
+}
+
+
+window.addEventListener("scroll", reveal);
+</script>
+<script>
+  function reveal() {
+var reveals = document.querySelectorAll(".about-me p");
+
+for (var i = 0; i < reveals.length; i++) {
+var windowHeight = window.innerHeight;
+var elementTop = reveals[i].getBoundingClientRect().top;
+var elementVisible = 150;
+
+if (elementTop < windowHeight - elementVisible) {
+  reveals[i].classList.add("active");
+} else {
+  reveals[i].classList.remove("active");
+}
+}
+}
+
+
+window.addEventListener("scroll", reveal);
+</script>
+<script>
+  function reveal() {
+var reveals = document.querySelectorAll(".gallery-end p");
+
+for (var i = 0; i < reveals.length; i++) {
+var windowHeight = window.innerHeight;
+var elementTop = reveals[i].getBoundingClientRect().top;
+var elementVisible = 150;
+
+if (elementTop < windowHeight - elementVisible) {
+  reveals[i].classList.add("active");
+} else {
+  reveals[i].classList.remove("active");
+}
+}
+}
+
+
+window.addEventListener("scroll", reveal);
+</script>
+<script>
+  function reveal() {
+var reveals = document.querySelectorAll(".gallery-end img");
+
+for (var i = 0; i < reveals.length; i++) {
+var windowHeight = window.innerHeight;
+var elementTop = reveals[i].getBoundingClientRect().top;
+var elementVisible = 150;
+
+if (elementTop < windowHeight - elementVisible) {
+  reveals[i].classList.add("active");
+} else {
+  reveals[i].classList.remove("active");
+}
+}
+}
+
+
+window.addEventListener("scroll", reveal);
+</script>
+<script>
+  function reveal() {
+var reveals = document.querySelectorAll(".photography");
+
+for (var i = 0; i < reveals.length; i++) {
+var windowHeight = window.innerHeight;
+var elementTop = reveals[i].getBoundingClientRect().top;
+var elementVisible = 150;
+
+if (elementTop < windowHeight - elementVisible) {
+  reveals[i].classList.add("active");
+} else {
+  reveals[i].classList.remove("active");
+}
+}
+}
+
+
+window.addEventListener("scroll", reveal);
+</script>
+<script>
+  function reveal() {
+var reveals = document.querySelectorAll(".gallery-end h1");
+
+for (var i = 0; i < reveals.length; i++) {
+var windowHeight = window.innerHeight;
+var elementTop = reveals[i].getBoundingClientRect().top;
+var elementVisible = 150;
+
+if (elementTop < windowHeight - elementVisible) {
+  reveals[i].classList.add("active");
+} else {
+  reveals[i].classList.remove("active");
+}
+}
+}
+
+
+window.addEventListener("scroll", reveal);
+</script>
+<script>
+    
+  var navLinks = document.getElementById("navLinks")
+  function showMenu(){
+      navLinks.style.right = "0";
+  }
+  function hideMenu(){
+      navLinks.style.right = "-200px";
+  }
+  
+</script>
+        
+  </body>
+</html>
